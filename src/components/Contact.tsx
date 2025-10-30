@@ -151,7 +151,7 @@ export default function Contact({ theme }: ContactProps) {
               type="submit"
               className="w-full bg-[#FFB800] text-black font-bold py-3 rounded-lg transition-all duration-300 hover:bg-[#FFD700] hover:shadow-lg hover:shadow-[#FFB800]/50 hover:scale-105"
             >
-              Enviar Mensagem
+              Enviar Mensage
             </button>
           </form>
         </div>
