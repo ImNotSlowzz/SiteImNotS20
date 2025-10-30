@@ -12,31 +12,31 @@ const projects = [
   {
     title: 'Site ImNotS Studio Vendas de Sites',
     category: 'Vendas de Sites',
-    image: '/photos/capaprojetos1.jpg',
+    image: 'photos/capaprojetos1.jpg',
     link: 'https://imnotslowzz.github.io/SiteImNotSStudios/',
   },
   {
     title: 'Barbearia Samuel',
     category: 'Landing Page Design',
-    image: '/photos/capaprojetos2.jpg',
+    image: 'photos/capaprojetos2.jpg',
     link: 'https://imnotslowzz.github.io/SamuelCabeleireiro/',
   },
   {
     title: 'Linktree - Exclusiva',
     category: 'Linktree Customizado',
-    image: '/photos/capasprojetos3.jpg',
+    image: 'photos/capasprojetos3.jpg',
     link: 'https://imnotslowzz.github.io/Links',
   },
   {
     title: 'To-Do List App - Exclusivo',
-    category: 'to-do list exclusivo',
-    image: '/photos/capaprojetos4.jpg',
+    category: 'To-do List Exclusivo',
+    image: 'photos/capaprojetos4.jpg',
     link: 'https://imnotslowzz.github.io/To-Do-List',
   },
   {
-    title: 'prompt Manager - Exclusivo',
+    title: 'Prompt Manager - Exclusivo',
     category: 'Gerenciador de Prompts - Exclusivo',
-    image: '/photos/capaprojetos5.jpg',
+    image: 'photos/capaprojetos5.jpg',
     link: 'https://imnotslowzz.github.io/Prompt-Manager',
   },
 ];

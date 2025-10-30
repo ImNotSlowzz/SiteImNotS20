@@ -24,7 +24,7 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
         <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('home')}>
           {/* Logo da empresa */}
           <img
-            src="/photos/SYNC.png" // substitua pelo caminho da sua logo
+            src="photos/SYNC.png" // substitua pelo caminho da sua logo
             alt="ImNot’S Studios"
             className="w-10 h-10 object-contain"
           />
