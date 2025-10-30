@@ -14,17 +14,28 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      theme === 'dark' ? 'bg-black/80' : 'bg-white/80'
-    } backdrop-blur-md`}>
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        theme === 'dark' ? 'bg-black/80' : 'bg-white/80'
+      } backdrop-blur-md`}
+    >
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        {/* LOGO + NOME */}
+        <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('home')}>
+          {/* Logo da empresa */}
+          <img
+            src="/photos/SYNC.png" // substitua pelo caminho da sua logo
+            alt="ImNot’S Studios"
+            className="w-10 h-10 object-contain"
+          />
+          {/* Nome da empresa */}
           <div className="text-2xl font-bold tracking-tighter">
-            <span className={theme === 'dark' ? 'text-white' : 'text-black'}>imnots</span>
-            <span className="text-[#FFB800]"> studios</span>
+            <span className={theme === 'dark' ? 'text-white' : 'text-black'}>Imnot'S</span>
+            <span className="text-[#FFB800]"> Studios</span>
           </div>
         </div>
 
+        {/* Menu */}
         <ul className="hidden md:flex space-x-8 items-center">
           {['home', 'equipe', 'projetos', 'contato'].map((item) => (
             <li key={item}>
@@ -40,6 +51,7 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
           ))}
         </ul>
 
+        {/* Toggle Theme */}
         <button
           onClick={toggleTheme}
           className={`p-2 rounded-full transition-all duration-300 hover:bg-[#FFB800]/20 ${

@@ -65,7 +65,7 @@ export default function Contact({ theme }: ContactProps) {
 
             <div className="space-y-4">
               <a
-                href="https://instagram.com/imnotsstudios"
+                href="https://www.instagram.com/imnots_studios"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center space-x-3 group transition-all duration-300 hover:text-[#FFB800] ${
@@ -77,7 +77,8 @@ export default function Contact({ theme }: ContactProps) {
               </a>
 
               <a
-                href="https://linkedin.com/company/imnots"
+                href="https://www.linkedin.com/company/imnotsstudios/
+"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`flex items-center space-x-3 group transition-all duration-300 hover:text-[#FFB800] ${
@@ -95,7 +96,7 @@ export default function Contact({ theme }: ContactProps) {
                 }`}
               >
                 <Mail className="transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(255,184,0,0.8)]" />
-                <span>hello@imnots.studio</span>
+                <span>studiosimnots@gmail.com</span>
               </a>
             </div>
           </div>

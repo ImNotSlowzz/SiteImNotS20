@@ -10,34 +10,34 @@ interface ProjectsProps {
 
 const projects = [
   {
-    title: 'Rebel Campaign',
-    category: 'Branding',
-    image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'Site ImNotS Studio Vendas de Sites',
+    category: 'Vendas de Sites',
+    image: '/photos/capaprojetos1.jpg',
+    link: 'https://imnotslowzz.github.io/SiteImNotSStudios/',
   },
   {
-    title: 'Future Vision',
-    category: 'Motion Design',
-    image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'Barbearia Samuel',
+    category: 'Landing Page Design',
+    image: '/photos/capaprojetos2.jpg',
+    link: 'https://imnotslowzz.github.io/SamuelCabeleireiro/',
   },
   {
-    title: 'Dark Matter',
-    category: 'Digital Experience',
-    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'Linktree - Exclusiva',
+    category: 'Linktree Customizado',
+    image: '/photos/capasprojetos3.jpg',
+    link: 'https://imnotslowzz.github.io/Links',
   },
   {
-    title: 'Golden Hour',
-    category: 'Creative Direction',
-    image: 'https://images.pexels.com/photos/1619845/pexels-photo-1619845.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'To-Do List App - Exclusivo',
+    category: 'to-do list exclusivo',
+    image: '/photos/capaprojetos4.jpg',
+    link: 'https://imnotslowzz.github.io/To-Do-List',
   },
   {
-    title: 'Urban Poetry',
-    category: 'Photography',
-    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600',
-  },
-  {
-    title: 'Neon Dreams',
-    category: 'Visual Identity',
-    image: 'https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'prompt Manager - Exclusivo',
+    category: 'Gerenciador de Prompts - Exclusivo',
+    image: '/photos/capaprojetos5.jpg',
+    link: 'https://imnotslowzz.github.io/Prompt-Manager',
   },
 ];
 
@@ -93,27 +93,42 @@ export default function Projects({ theme }: ProjectsProps) {
                 theme === 'dark' ? 'bg-zinc-900' : 'bg-white'
               }`}
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
-                <h3 className="text-white text-3xl font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  {project.title}
-                </h3>
-                <p className="text-[#FFB800] text-sm uppercase tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
-                  {project.category}
-                </p>
-              </div>
-              <div className="p-6">
-                <h3 className={`text-xl font-bold mb-1 ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
-                  {project.title}
-                </h3>
-                <p className="text-[#FFB800] text-sm uppercase tracking-wider">{project.category}</p>
-              </div>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                  <h3 className="text-white text-3xl font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    {project.title}
+                  </h3>
+                  <p className="text-[#FFB800] text-sm uppercase tracking-wider transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
+                    {project.category}
+                  </p>
+                </div>
+
+                <div className="p-6">
+                  <h3
+                    className={`text-xl font-bold mb-1 ${
+                      theme === 'dark' ? 'text-white' : 'text-black'
+                    }`}
+                  >
+                    {project.title}
+                  </h3>
+                  <p className="text-[#FFB800] text-sm uppercase tracking-wider">
+                    {project.category}
+                  </p>
+                </div>
+              </a>
             </div>
           ))}
         </div>

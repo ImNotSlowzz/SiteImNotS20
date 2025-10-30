@@ -54,7 +54,7 @@ export default function CustomCursor() {
       gsap.to(cursor, {
         scale: 1,
         rotate: 0,
-        backgroundColor: '#FFB800',
+        backgroundColor: '#f8f405ff',
         duration: 0.4,
         ease: 'elastic.out(1, 0.5)',
       });
