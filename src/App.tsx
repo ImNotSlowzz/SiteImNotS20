@@ -26,7 +26,8 @@ function App() {
   }
 
   return (
-    <div className={theme === 'dark' ? 'bg-black' : 'bg-white'}>
+    // Adicionamos a classe 'cursor-none' aqui para sumir com o ponteiro padrão
+    <div className={`${theme === 'dark' ? 'bg-black' : 'bg-white'} cursor-none`}>
       <div className="noise-bg" />
       <CustomCursor />
       <Header theme={theme} toggleTheme={toggleTheme} />
